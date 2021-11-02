@@ -1,0 +1,45 @@
+# 디폴트 app identifier, apple id
+app_identifier("com.jake.SavePhoto.alpha")
+apple_id("palatable7@naver.com")
+
+for_platform :ios do
+
+    # deploy
+
+    for_lane :deploy_beta do
+        app_identifier 'com.jake.SavePhoto.beta'
+    end
+
+    for_lane :deploy_real do
+        app_identifier 'com.jake.SavePhoto'
+    end
+
+    # sync
+
+    for_lane :sync_codesign_beta do
+        app_identifier 'com.jake.SavePhoto.beta'
+    end
+
+    for_lane :sync_codesign_real do
+        app_identifier 'com.jake.SavePhoto'
+    end
+
+    for_lane :sync_codesign_appstore do
+        app_identifier 'com.jake.SavePhoto'
+    end
+
+    # renew
+
+    for_lane :renew_codesign_beta do
+        app_identifier 'com.jake.SavePhoto.beta'
+    end
+
+    for_lane :renew_codesign_real do
+        app_identifier 'com.jake.SavePhoto'
+    end
+
+    for_lane :renew_codesign_appstore do
+        app_identifier 'com.jake.SavePhoto'
+    end
+
+end

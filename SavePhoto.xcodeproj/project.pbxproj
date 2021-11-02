@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E048AE952731A1BE00AA3C92 /* GoogleService-Info-alpha.plist in Resources */ = {isa = PBXBuildFile; fileRef = E048AE922731A1BD00AA3C92 /* GoogleService-Info-alpha.plist */; };
+		E048AE962731A1BE00AA3C92 /* GoogleService-Info-beta.plist in Resources */ = {isa = PBXBuildFile; fileRef = E048AE932731A1BD00AA3C92 /* GoogleService-Info-beta.plist */; };
+		E048AE972731A1BE00AA3C92 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E048AE942731A1BD00AA3C92 /* GoogleService-Info.plist */; };
+		E048AE9D2731AF0200AA3C92 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = E048AE9C2731AF0200AA3C92 /* FirebaseAnalytics */; };
 		E063409E273045C20054F72B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E063409D273045C20054F72B /* AppDelegate.swift */; };
 		E06340A0273045C20054F72B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E063409F273045C20054F72B /* SceneDelegate.swift */; };
 		E06340A2273045C20054F72B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06340A1273045C20054F72B /* ViewController.swift */; };
@@ -17,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E048AE922731A1BD00AA3C92 /* GoogleService-Info-alpha.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-alpha.plist"; sourceTree = "<group>"; };
+		E048AE932731A1BD00AA3C92 /* GoogleService-Info-beta.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-beta.plist"; sourceTree = "<group>"; };
+		E048AE942731A1BD00AA3C92 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E063409A273045C20054F72B /* SavePhoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SavePhoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E063409D273045C20054F72B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E063409F273045C20054F72B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,12 +43,43 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E048AE9D2731AF0200AA3C92 /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E048AE902731A1A800AA3C92 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E06340A3273045C20054F72B /* Main.storyboard */,
+				E06340A6273045C50054F72B /* Assets.xcassets */,
+				E06340A8273045C50054F72B /* LaunchScreen.storyboard */,
+				E06340AB273045C50054F72B /* Info.plist */,
+				E048AE912731A1B000AA3C92 /* GoogleService */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E048AE912731A1B000AA3C92 /* GoogleService */ = {
+			isa = PBXGroup;
+			children = (
+				E048AE922731A1BD00AA3C92 /* GoogleService-Info-alpha.plist */,
+				E048AE932731A1BD00AA3C92 /* GoogleService-Info-beta.plist */,
+				E048AE942731A1BD00AA3C92 /* GoogleService-Info.plist */,
+			);
+			path = GoogleService;
+			sourceTree = "<group>";
+		};
+		E048AE982731A1D700AA3C92 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				E06340A1273045C20054F72B /* ViewController.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
 		E0634091273045C20054F72B = {
 			isa = PBXGroup;
 			children = (
@@ -62,14 +100,9 @@
 			isa = PBXGroup;
 			children = (
 				E06340BF27304CDD0054F72B /* App */,
+				E048AE982731A1D700AA3C92 /* Presentation */,
 				E06340BB2730486C0054F72B /* Configuration */,
-				E063409D273045C20054F72B /* AppDelegate.swift */,
-				E063409F273045C20054F72B /* SceneDelegate.swift */,
-				E06340A1273045C20054F72B /* ViewController.swift */,
-				E06340A3273045C20054F72B /* Main.storyboard */,
-				E06340A6273045C50054F72B /* Assets.xcassets */,
-				E06340A8273045C50054F72B /* LaunchScreen.storyboard */,
-				E06340AB273045C50054F72B /* Info.plist */,
+				E048AE902731A1A800AA3C92 /* Supporting Files */,
 			);
 			path = SavePhoto;
 			sourceTree = "<group>";
@@ -87,6 +120,8 @@
 		E06340BF27304CDD0054F72B /* App */ = {
 			isa = PBXGroup;
 			children = (
+				E063409D273045C20054F72B /* AppDelegate.swift */,
+				E063409F273045C20054F72B /* SceneDelegate.swift */,
 				E06340C027304CE40054F72B /* AppConfiguration.swift */,
 			);
 			path = App;
@@ -102,12 +137,16 @@
 				E0634096273045C20054F72B /* Sources */,
 				E0634097273045C20054F72B /* Frameworks */,
 				E0634098273045C20054F72B /* Resources */,
+				E048AE992731A25800AA3C92 /* Firebase GoogleService-info */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = SavePhoto;
+			packageProductDependencies = (
+				E048AE9C2731AF0200AA3C92 /* FirebaseAnalytics */,
+			);
 			productName = SavePhoto;
 			productReference = E063409A273045C20054F72B /* SavePhoto.app */;
 			productType = "com.apple.product-type.application";
@@ -136,6 +175,9 @@
 				Base,
 			);
 			mainGroup = E0634091273045C20054F72B;
+			packageReferences = (
+				E048AE9B2731AF0200AA3C92 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = E063409B273045C20054F72B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -152,11 +194,35 @@
 			files = (
 				E06340AA273045C50054F72B /* LaunchScreen.storyboard in Resources */,
 				E06340A7273045C50054F72B /* Assets.xcassets in Resources */,
+				E048AE952731A1BE00AA3C92 /* GoogleService-Info-alpha.plist in Resources */,
+				E048AE962731A1BE00AA3C92 /* GoogleService-Info-beta.plist in Resources */,
 				E06340A5273045C20054F72B /* Main.storyboard in Resources */,
+				E048AE972731A1BE00AA3C92 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E048AE992731A25800AA3C92 /* Firebase GoogleService-info */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Firebase GoogleService-info";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"Build Configuration: \" ${CONFIGURATION}\n\nif [ ${CONFIGURATION} == *\"real\" ]; then\n    echo \"GoogleService-real\"\n    cp -r \"${PROJECT_DIR}/${PRODUCT_NAME}/Service/GoogleService-Info-real.plist\"\n     \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\nelif [ ${CONFIGURATION} == *\"alpha\" ]; then  \n    echo \"alpha\"\n    cp -r \"${PROJECT_DIR}/${PRODUCT_NAME}/Service/GoogleService-Info-alpha.plist\"\n     \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\nelse \n    echo \"beta\"\n    cp -r \"${PROJECT_DIR}/${PRODUCT_NAME}/Service/GoogleService-Info-beta.plist\" \n    \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E0634096273045C20054F72B /* Sources */ = {
@@ -227,6 +293,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -290,6 +357,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -322,7 +390,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SS7U83UJNK;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SavePhoto/Info.plist;
+				INFOPLIST_FILE = "SavePhoto/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -335,6 +403,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "$(X_BUNDLE_ID)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG_ALPHA;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -351,7 +420,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SS7U83UJNK;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SavePhoto/Info.plist;
+				INFOPLIST_FILE = "SavePhoto/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -364,6 +433,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "$(X_BUNDLE_ID)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = RELEASE_ALPHA;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -405,6 +475,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -443,7 +514,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SS7U83UJNK;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SavePhoto/Info.plist;
+				INFOPLIST_FILE = "SavePhoto/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -456,6 +527,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "$(X_BUNDLE_ID)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG_BETA;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -497,6 +569,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -535,7 +608,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SS7U83UJNK;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SavePhoto/Info.plist;
+				INFOPLIST_FILE = "SavePhoto/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -548,6 +621,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "$(X_BUNDLE_ID)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG_REAL;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -589,6 +663,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -621,7 +696,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SS7U83UJNK;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SavePhoto/Info.plist;
+				INFOPLIST_FILE = "SavePhoto/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -634,6 +709,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "$(X_BUNDLE_ID)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = RELEASE_BETA;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -675,6 +751,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -707,7 +784,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SS7U83UJNK;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SavePhoto/Info.plist;
+				INFOPLIST_FILE = "SavePhoto/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -720,6 +797,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "$(X_BUNDLE_ID)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = RELEASE_REAL;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -756,6 +834,25 @@
 			defaultConfigurationName = "Release (alpha)";
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E048AE9B2731AF0200AA3C92 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E048AE9C2731AF0200AA3C92 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E048AE9B2731AF0200AA3C92 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E0634092273045C20054F72B /* Project object */;
 }

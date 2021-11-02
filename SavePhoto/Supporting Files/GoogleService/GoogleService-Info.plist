@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>773589851865-hr4jhf0pomnsipje2vhh33d8q73sdngt.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.773589851865-hr4jhf0pomnsipje2vhh33d8q73sdngt</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBuZ575WvLgeL4rd1vLgNtqMiNdedoJh9I</string>
+	<key>GCM_SENDER_ID</key>
+	<string>773589851865</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.jake.SavePhoto</string>
+	<key>PROJECT_ID</key>
+	<string>todo-list-35b6d</string>
+	<key>STORAGE_BUCKET</key>
+	<string>todo-list-35b6d.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:773589851865:ios:032261c462bd6b99cce8c8</string>
+</dict>
+</plist>

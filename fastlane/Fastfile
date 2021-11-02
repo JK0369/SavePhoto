@@ -1,0 +1,137 @@
+default_platform(:ios)
+
+ENV["FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD"] = "wzwy-zcxl-xkev-lyft"
+
+platform :ios do
+  
+  # deploy
+
+  lane :deploy_alpha do |options|
+    renew_codesign_alpha()
+    sync_codesign_alpha()
+    bump_build_number()
+    build(configuration: "alpha")
+    upload_to_firebase(appid: "1:773589851865:ios:d1dcae5400c3304acce8c8", tester_group: "tester-first, tester-second" )
+  end
+
+  lane :deploy_beta do |options|
+    renew_codesign_beta()
+    sync_codesign_beta()
+    bump_build_number()
+    build(configuration: "beta")
+    upload_to_firebase(appid: "1:773589851865:ios:749c1a7bffb649b1cce8c8", tester_group: "tester-first, tester-second" )
+  end
+
+  lane :deploy_real do |options|
+
+    renew_codesign_appstore()
+    sync_codesign_appstore()
+    bump_build_number()
+    build(configuration: "real")
+
+    # TODO: 2FA 인증용도의 key 값
+    upload_to_testflight(skip_waiting_for_build_processing: true, 
+                          ipa: "fastlane/distribute/SavePhoto.ipa")
+  end
+
+  # sync
+
+  lane :sync_codesign_alpha do
+    sync_codesign(type:"development")
+    sync_codesign(type:"adhoc")
+  end
+
+  lane :sync_codesign_beta do
+    sync_codesign(type:"development")
+    sync_codesign(type:"adhoc")
+  end
+
+  lane :sync_codesign_real do
+    sync_codesign(type:"development")
+    sync_codesign(type:"appstore")
+  end
+
+  lane :sync_codesign_appstore do
+    sync_codesign(type:"appstore")
+  end
+
+  private_lane :sync_codesign do|options|
+    match(type:options[:type], readonly: true)
+  end
+
+  # renew
+
+  lane :renew_codesign_alpha do
+    renew_codesign(type:"development")
+    renew_codesign(type:"adhoc")
+  end
+
+  lane :renew_codesign_beta do
+    renew_codesign(type:"development")
+    renew_codesign(type:"adhoc")
+  end
+
+  lane :renew_codesign_real do
+    renew_codesign(type:"development")
+    renew_codesign(type:"adhoc")
+  end
+
+  lane :renew_codesign_appstore do
+    renew_codesign(type:"appstore")
+  end
+
+  private_lane :renew_codesign do|options|
+    match(type:options[:type], force_for_new_devices: true)
+  end
+
+  # register new device
+
+  lane :register_new_devices do
+    register_devices(
+      devices_file: "./fastlane/devices.txt",
+      team_id: "SS7U83UJNK"
+    )
+  end
+
+  # private
+
+  private_lane :build do |options|
+    case options[:configuration]
+    when "alpha"
+      scheme = "SavePhoto alpha"
+      export_type = "ad-hoc"
+    when "beta"
+      scheme = "SavePhoto beta"
+      export_type = "ad-hoc"
+    when "real"
+      scheme = "SavePhoto"
+      export_type = "app-store"
+    end
+
+    build_app(
+      scheme: scheme,
+      export_method: export_type,
+      output_directory: "./fastlane/distribute",
+      clean: true
+    )
+  end
+
+  private_lane :upload_to_firebase do |options|
+    firebase_app_distribution(
+      app: options[:appid],
+      groups: options[:tester_group],
+      firebase_cli_token: "1//0ePS_knB0VXuOCgYIARAAGA4SNwF-L9IrcIritOpKCIwYh5Mdj288Jgw7euJG_uu6UPVsUgeuQzoIoCuPStvAu2o9qhNYKM_Lv6E",
+      ipa_path: "./fastlane/distribute/SavePhoto.ipa"
+      #release_notes: "Lots of amazing new features to test out!"
+    )
+  end
+
+  private_lane :bump_build_number do
+    ensure_git_status_clean
+    increment_build_number(xcodeproj: "./SavePhoto.xcodeproj")
+    build_number = get_build_number(xcodeproj: "./SavePhoto.xcodeproj")
+    commit_version_bump(message: "Bump build number to #{build_number} by fastlane", xcodeproj: "./SavePhoto.xcodeproj")
+    push_to_git_remote
+  end
+
+end
