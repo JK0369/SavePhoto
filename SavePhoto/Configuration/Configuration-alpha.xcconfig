@@ -1,0 +1,21 @@
+//
+//  Configuration-alpha.xcconfig
+//  SavePhoto
+//
+//  Created by 김종권 on 2021/11/02.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+// Configuration-alpha.xcconfig
+
+// Bundle
+X_BUNDLE_DISPLAY_NAME = SavePhoto (alpha)
+X_BUNDLE_ID = com.jake.SavePhoto.alpha
+
+// Phase
+X_DEPLOY_PHASE = alpha
+
+// API
+X_API_SERVER_URL = http:/$()/localhost:3000
