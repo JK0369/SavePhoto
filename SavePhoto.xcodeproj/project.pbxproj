@@ -10,7 +10,6 @@
 		E048AE952731A1BE00AA3C92 /* GoogleService-Info-alpha.plist in Resources */ = {isa = PBXBuildFile; fileRef = E048AE922731A1BD00AA3C92 /* GoogleService-Info-alpha.plist */; };
 		E048AE962731A1BE00AA3C92 /* GoogleService-Info-beta.plist in Resources */ = {isa = PBXBuildFile; fileRef = E048AE932731A1BD00AA3C92 /* GoogleService-Info-beta.plist */; };
 		E048AE972731A1BE00AA3C92 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E048AE942731A1BD00AA3C92 /* GoogleService-Info.plist */; };
-		E048AE9D2731AF0200AA3C92 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = E048AE9C2731AF0200AA3C92 /* FirebaseAnalytics */; };
 		E063409E273045C20054F72B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E063409D273045C20054F72B /* AppDelegate.swift */; };
 		E06340A0273045C20054F72B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E063409F273045C20054F72B /* SceneDelegate.swift */; };
 		E06340A2273045C20054F72B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06340A1273045C20054F72B /* ViewController.swift */; };
@@ -18,6 +17,7 @@
 		E06340A7273045C50054F72B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E06340A6273045C50054F72B /* Assets.xcassets */; };
 		E06340AA273045C50054F72B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E06340A8273045C50054F72B /* LaunchScreen.storyboard */; };
 		E06340C127304CE40054F72B /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06340C027304CE40054F72B /* AppConfiguration.swift */; };
+		E0B5E4242732E30C00D21571 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = E0B5E4232732E30C00D21571 /* FirebaseAnalytics */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E048AE9D2731AF0200AA3C92 /* FirebaseAnalytics in Frameworks */,
+				E0B5E4242732E30C00D21571 /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,7 +145,7 @@
 			);
 			name = SavePhoto;
 			packageProductDependencies = (
-				E048AE9C2731AF0200AA3C92 /* FirebaseAnalytics */,
+				E0B5E4232732E30C00D21571 /* FirebaseAnalytics */,
 			);
 			productName = SavePhoto;
 			productReference = E063409A273045C20054F72B /* SavePhoto.app */;
@@ -176,7 +176,7 @@
 			);
 			mainGroup = E0634091273045C20054F72B;
 			packageReferences = (
-				E048AE9B2731AF0200AA3C92 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				E0B5E4222732E30C00D21571 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = E063409B273045C20054F72B /* Products */;
 			projectDirPath = "";
@@ -836,7 +836,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		E048AE9B2731AF0200AA3C92 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+		E0B5E4222732E30C00D21571 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
 			requirement = {
@@ -847,9 +847,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		E048AE9C2731AF0200AA3C92 /* FirebaseAnalytics */ = {
+		E0B5E4232732E30C00D21571 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E048AE9B2731AF0200AA3C92 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = E0B5E4222732E30C00D21571 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAnalytics;
 		};
 /* End XCSwiftPackageProductDependency section */
