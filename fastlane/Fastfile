@@ -104,7 +104,7 @@ platform :ios do
       scheme = "SavePhoto beta"
       export_type = "ad-hoc"
     when "real"
-      scheme = "SavePhoto"
+      scheme = "SavePhoto real"
       export_type = "app-store"
     end
 
