@@ -14,10 +14,10 @@
 		E06340A7273045C50054F72B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E06340A6273045C50054F72B /* Assets.xcassets */; };
 		E06340AA273045C50054F72B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E06340A8273045C50054F72B /* LaunchScreen.storyboard */; };
 		E06340C127304CE40054F72B /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06340C027304CE40054F72B /* AppConfiguration.swift */; };
-		E0B5E4242732E30C00D21571 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = E0B5E4232732E30C00D21571 /* FirebaseAnalytics */; };
 		E0B5E4282732E89200D21571 /* GoogleService-Info-beta.plist in Resources */ = {isa = PBXBuildFile; fileRef = E0B5E4252732E89200D21571 /* GoogleService-Info-beta.plist */; };
 		E0B5E4292732E89200D21571 /* GoogleService-Info-alpha.plist in Resources */ = {isa = PBXBuildFile; fileRef = E0B5E4262732E89200D21571 /* GoogleService-Info-alpha.plist */; };
 		E0B5E42A2732E89200D21571 /* GoogleService-Info-real.plist in Resources */ = {isa = PBXBuildFile; fileRef = E0B5E4272732E89200D21571 /* GoogleService-Info-real.plist */; };
+		E0F235292732FE6200408646 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = E0F235282732FE6200408646 /* FirebaseAnalytics */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0B5E4242732E30C00D21571 /* FirebaseAnalytics in Frameworks */,
+				E0F235292732FE6200408646 /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,7 +145,7 @@
 			);
 			name = SavePhoto;
 			packageProductDependencies = (
-				E0B5E4232732E30C00D21571 /* FirebaseAnalytics */,
+				E0F235282732FE6200408646 /* FirebaseAnalytics */,
 			);
 			productName = SavePhoto;
 			productReference = E063409A273045C20054F72B /* SavePhoto.app */;
@@ -176,7 +176,7 @@
 			);
 			mainGroup = E0634091273045C20054F72B;
 			packageReferences = (
-				E0B5E4222732E30C00D21571 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				E0F235272732FE6200408646 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = E063409B273045C20054F72B /* Products */;
 			projectDirPath = "";
@@ -848,7 +848,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		E0B5E4222732E30C00D21571 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+		E0F235272732FE6200408646 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
 			requirement = {
@@ -859,9 +859,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		E0B5E4232732E30C00D21571 /* FirebaseAnalytics */ = {
+		E0F235282732FE6200408646 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E0B5E4222732E30C00D21571 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = E0F235272732FE6200408646 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAnalytics;
 		};
 /* End XCSwiftPackageProductDependency section */
