@@ -24,8 +24,8 @@ platform :ios do
 
   lane :deploy_real do |options|
 
-    renew_codesign_appstore()
-    sync_codesign_appstore()
+    renew_codesign_real()
+    sync_codesign_real()
     bump_build_number()
     build(configuration: "real")
 
@@ -51,10 +51,6 @@ platform :ios do
     sync_codesign(type:"appstore")
   end
 
-  lane :sync_codesign_appstore do
-    sync_codesign(type:"appstore")
-  end
-
   private_lane :sync_codesign do|options|
     match(type:options[:type], readonly: true)
   end
@@ -73,10 +69,6 @@ platform :ios do
 
   lane :renew_codesign_real do
     renew_codesign(type:"development")
-    renew_codesign(type:"adhoc")
-  end
-
-  lane :renew_codesign_appstore do
     renew_codesign(type:"appstore")
   end
 

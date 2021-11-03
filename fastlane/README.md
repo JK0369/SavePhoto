@@ -66,11 +66,6 @@ fastlane ios renew_codesign_beta
 fastlane ios renew_codesign_real
 ```
 
-### ios renew_codesign_appstore
-```
-fastlane ios renew_codesign_appstore
-```
-
 ### ios register_new_devices
 ```
 fastlane ios register_new_devices
