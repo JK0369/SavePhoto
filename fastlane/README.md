@@ -46,11 +46,6 @@ fastlane ios sync_codesign_beta
 fastlane ios sync_codesign_real
 ```
 
-### ios sync_codesign_appstore
-```
-fastlane ios sync_codesign_appstore
-```
-
 ### ios renew_codesign_alpha
 ```
 fastlane ios renew_codesign_alpha
