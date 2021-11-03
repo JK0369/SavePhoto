@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		E048AE952731A1BE00AA3C92 /* GoogleService-Info-alpha.plist in Resources */ = {isa = PBXBuildFile; fileRef = E048AE922731A1BD00AA3C92 /* GoogleService-Info-alpha.plist */; };
 		E048AE962731A1BE00AA3C92 /* GoogleService-Info-beta.plist in Resources */ = {isa = PBXBuildFile; fileRef = E048AE932731A1BD00AA3C92 /* GoogleService-Info-beta.plist */; };
-		E048AE972731A1BE00AA3C92 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E048AE942731A1BD00AA3C92 /* GoogleService-Info.plist */; };
+		E048AE972731A1BE00AA3C92 /* GoogleService-Info-real.plist in Resources */ = {isa = PBXBuildFile; fileRef = E048AE942731A1BD00AA3C92 /* GoogleService-Info-real.plist */; };
 		E063409E273045C20054F72B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E063409D273045C20054F72B /* AppDelegate.swift */; };
 		E06340A0273045C20054F72B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E063409F273045C20054F72B /* SceneDelegate.swift */; };
 		E06340A2273045C20054F72B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06340A1273045C20054F72B /* ViewController.swift */; };
@@ -23,7 +23,7 @@
 /* Begin PBXFileReference section */
 		E048AE922731A1BD00AA3C92 /* GoogleService-Info-alpha.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-alpha.plist"; sourceTree = "<group>"; };
 		E048AE932731A1BD00AA3C92 /* GoogleService-Info-beta.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-beta.plist"; sourceTree = "<group>"; };
-		E048AE942731A1BD00AA3C92 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E048AE942731A1BD00AA3C92 /* GoogleService-Info-real.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-real.plist"; sourceTree = "<group>"; };
 		E063409A273045C20054F72B /* SavePhoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SavePhoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E063409D273045C20054F72B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E063409F273045C20054F72B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,19 +57,18 @@
 				E06340A6273045C50054F72B /* Assets.xcassets */,
 				E06340A8273045C50054F72B /* LaunchScreen.storyboard */,
 				E06340AB273045C50054F72B /* Info.plist */,
-				E048AE912731A1B000AA3C92 /* GoogleService */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		E048AE912731A1B000AA3C92 /* GoogleService */ = {
+		E048AE912731A1B000AA3C92 /* Service */ = {
 			isa = PBXGroup;
 			children = (
 				E048AE922731A1BD00AA3C92 /* GoogleService-Info-alpha.plist */,
 				E048AE932731A1BD00AA3C92 /* GoogleService-Info-beta.plist */,
-				E048AE942731A1BD00AA3C92 /* GoogleService-Info.plist */,
+				E048AE942731A1BD00AA3C92 /* GoogleService-Info-real.plist */,
 			);
-			path = GoogleService;
+			path = Service;
 			sourceTree = "<group>";
 		};
 		E048AE982731A1D700AA3C92 /* Presentation */ = {
@@ -99,6 +98,7 @@
 		E063409C273045C20054F72B /* SavePhoto */ = {
 			isa = PBXGroup;
 			children = (
+				E048AE912731A1B000AA3C92 /* Service */,
 				E06340BF27304CDD0054F72B /* App */,
 				E048AE982731A1D700AA3C92 /* Presentation */,
 				E06340BB2730486C0054F72B /* Configuration */,
@@ -197,7 +197,7 @@
 				E048AE952731A1BE00AA3C92 /* GoogleService-Info-alpha.plist in Resources */,
 				E048AE962731A1BE00AA3C92 /* GoogleService-Info-beta.plist in Resources */,
 				E06340A5273045C20054F72B /* Main.storyboard in Resources */,
-				E048AE972731A1BE00AA3C92 /* GoogleService-Info.plist in Resources */,
+				E048AE972731A1BE00AA3C92 /* GoogleService-Info-real.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,7 +220,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "echo \"Build Configuration: \" ${CONFIGURATION}\n\nif [ ${CONFIGURATION} == *\"real\" ]; then\n    echo \"GoogleService-real\"\n    cp -r \"${PROJECT_DIR}/${PRODUCT_NAME}/Service/GoogleService-Info.plist\"\n     \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\nelif [ ${CONFIGURATION} == *\"alpha\" ]; then  \n    echo \"alpha\"\n    cp -r \"${PROJECT_DIR}/${PRODUCT_NAME}/Service/GoogleService-Info-alpha.plist\"\n     \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\nelse \n    echo \"beta\"\n    cp -r \"${PROJECT_DIR}/${PRODUCT_NAME}/Service/GoogleService-Info-beta.plist\" \n    \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\nfi\n";
+			shellScript = "echo \"Build Configuration: \" ${CONFIGURATION}\n\nif [ ${CONFIGURATION} == *\"real\" ]; then\n    echo \"real\"\n    cp -r \"${PROJECT_DIR}/${PRODUCT_NAME}/Service/GoogleService-Info-real.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\nelif [ ${CONFIGURATION} == *\"alpha\" ]; then  \n    echo \"alpha\"\n    cp -r \"${PROJECT_DIR}/${PRODUCT_NAME}/Service/GoogleService-Info-alpha.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\nelse \n    echo \"beta\"\n    cp -r \"${PROJECT_DIR}/${PRODUCT_NAME}/Service/GoogleService-Info-beta.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
