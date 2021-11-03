@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E048AE952731A1BE00AA3C92 /* GoogleService-Info-alpha.plist in Resources */ = {isa = PBXBuildFile; fileRef = E048AE922731A1BD00AA3C92 /* GoogleService-Info-alpha.plist */; };
-		E048AE962731A1BE00AA3C92 /* GoogleService-Info-beta.plist in Resources */ = {isa = PBXBuildFile; fileRef = E048AE932731A1BD00AA3C92 /* GoogleService-Info-beta.plist */; };
-		E048AE972731A1BE00AA3C92 /* GoogleService-Info-real.plist in Resources */ = {isa = PBXBuildFile; fileRef = E048AE942731A1BD00AA3C92 /* GoogleService-Info-real.plist */; };
 		E063409E273045C20054F72B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E063409D273045C20054F72B /* AppDelegate.swift */; };
 		E06340A0273045C20054F72B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E063409F273045C20054F72B /* SceneDelegate.swift */; };
 		E06340A2273045C20054F72B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06340A1273045C20054F72B /* ViewController.swift */; };
@@ -18,12 +15,12 @@
 		E06340AA273045C50054F72B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E06340A8273045C50054F72B /* LaunchScreen.storyboard */; };
 		E06340C127304CE40054F72B /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06340C027304CE40054F72B /* AppConfiguration.swift */; };
 		E0B5E4242732E30C00D21571 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = E0B5E4232732E30C00D21571 /* FirebaseAnalytics */; };
+		E0B5E4282732E89200D21571 /* GoogleService-Info-beta.plist in Resources */ = {isa = PBXBuildFile; fileRef = E0B5E4252732E89200D21571 /* GoogleService-Info-beta.plist */; };
+		E0B5E4292732E89200D21571 /* GoogleService-Info-alpha.plist in Resources */ = {isa = PBXBuildFile; fileRef = E0B5E4262732E89200D21571 /* GoogleService-Info-alpha.plist */; };
+		E0B5E42A2732E89200D21571 /* GoogleService-Info-real.plist in Resources */ = {isa = PBXBuildFile; fileRef = E0B5E4272732E89200D21571 /* GoogleService-Info-real.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E048AE922731A1BD00AA3C92 /* GoogleService-Info-alpha.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-alpha.plist"; sourceTree = "<group>"; };
-		E048AE932731A1BD00AA3C92 /* GoogleService-Info-beta.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-beta.plist"; sourceTree = "<group>"; };
-		E048AE942731A1BD00AA3C92 /* GoogleService-Info-real.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-real.plist"; sourceTree = "<group>"; };
 		E063409A273045C20054F72B /* SavePhoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SavePhoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E063409D273045C20054F72B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E063409F273045C20054F72B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +33,9 @@
 		E06340BD2730490F0054F72B /* Configuration-beta.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Configuration-beta.xcconfig"; sourceTree = "<group>"; };
 		E06340BE273049140054F72B /* Configuration-real.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Configuration-real.xcconfig"; sourceTree = "<group>"; };
 		E06340C027304CE40054F72B /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		E0B5E4252732E89200D21571 /* GoogleService-Info-beta.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-beta.plist"; sourceTree = "<group>"; };
+		E0B5E4262732E89200D21571 /* GoogleService-Info-alpha.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-alpha.plist"; sourceTree = "<group>"; };
+		E0B5E4272732E89200D21571 /* GoogleService-Info-real.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-real.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +64,9 @@
 		E048AE912731A1B000AA3C92 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				E048AE922731A1BD00AA3C92 /* GoogleService-Info-alpha.plist */,
-				E048AE932731A1BD00AA3C92 /* GoogleService-Info-beta.plist */,
-				E048AE942731A1BD00AA3C92 /* GoogleService-Info-real.plist */,
+				E0B5E4262732E89200D21571 /* GoogleService-Info-alpha.plist */,
+				E0B5E4252732E89200D21571 /* GoogleService-Info-beta.plist */,
+				E0B5E4272732E89200D21571 /* GoogleService-Info-real.plist */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -194,10 +194,10 @@
 			files = (
 				E06340AA273045C50054F72B /* LaunchScreen.storyboard in Resources */,
 				E06340A7273045C50054F72B /* Assets.xcassets in Resources */,
-				E048AE952731A1BE00AA3C92 /* GoogleService-Info-alpha.plist in Resources */,
-				E048AE962731A1BE00AA3C92 /* GoogleService-Info-beta.plist in Resources */,
+				E0B5E4292732E89200D21571 /* GoogleService-Info-alpha.plist in Resources */,
+				E0B5E42A2732E89200D21571 /* GoogleService-Info-real.plist in Resources */,
 				E06340A5273045C20054F72B /* Main.storyboard in Resources */,
-				E048AE972731A1BE00AA3C92 /* GoogleService-Info-real.plist in Resources */,
+				E0B5E4282732E89200D21571 /* GoogleService-Info-beta.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,7 +220,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "echo \"Build Configuration: \" ${CONFIGURATION}\n\nif [ ${CONFIGURATION} == *\"real\" ]; then\n    echo \"real\"\n    cp -r \"${PROJECT_DIR}/${PRODUCT_NAME}/Service/GoogleService-Info-real.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\nelif [ ${CONFIGURATION} == *\"alpha\" ]; then  \n    echo \"alpha\"\n    cp -r \"${PROJECT_DIR}/${PRODUCT_NAME}/Service/GoogleService-Info-alpha.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\nelse \n    echo \"beta\"\n    cp -r \"${PROJECT_DIR}/${PRODUCT_NAME}/Service/GoogleService-Info-beta.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\nfi\n";
+			shellScript = "echo \"Build Configuration: \" ${CONFIGURATION}\n\nif [[ ${CONFIGURATION} == *\"real\" ]]; then\n    echo \"real\"\n    cp -r \"${PROJECT_DIR}/${PRODUCT_NAME}/Service/GoogleService-Info-real.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\nelif [[ ${CONFIGURATION} == *\"alpha\" ]]; then  \n    echo \"alpha\"\n    cp -r \"${PROJECT_DIR}/${PRODUCT_NAME}/Service/GoogleService-Info-alpha.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\nelse \n    echo \"beta\"\n    cp -r \"${PROJECT_DIR}/${PRODUCT_NAME}/Service/GoogleService-Info-beta.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -258,7 +258,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		E06340AC273045C50054F72B /* Debug (alpha) */ = {
+		E06340AC273045C50054F72B /* Debug-alpha */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E06340BC273049090054F72B /* Configuration-alpha.xcconfig */;
 			buildSettings = {
@@ -311,7 +311,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -320,9 +320,9 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
-			name = "Debug (alpha)";
+			name = "Debug-alpha";
 		};
-		E06340AD273045C50054F72B /* Release (alpha) */ = {
+		E06340AD273045C50054F72B /* Release-alpha */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E06340BC273049090054F72B /* Configuration-alpha.xcconfig */;
 			buildSettings = {
@@ -369,7 +369,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "$(X_BUNDLE_ID)";
@@ -378,9 +378,9 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
-			name = "Release (alpha)";
+			name = "Release-alpha";
 		};
-		E06340AF273045C50054F72B /* Debug (alpha) */ = {
+		E06340AF273045C50054F72B /* Debug-alpha */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E06340BC273049090054F72B /* Configuration-alpha.xcconfig */;
 			buildSettings = {
@@ -408,9 +408,9 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = "Debug (alpha)";
+			name = "Debug-alpha";
 		};
-		E06340B0273045C50054F72B /* Release (alpha) */ = {
+		E06340B0273045C50054F72B /* Release-alpha */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E06340BC273049090054F72B /* Configuration-alpha.xcconfig */;
 			buildSettings = {
@@ -438,9 +438,9 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = "Release (alpha)";
+			name = "Release-alpha";
 		};
-		E06340B1273046B10054F72B /* Debug (beta) */ = {
+		E06340B1273046B10054F72B /* Debug-beta */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E06340BD2730490F0054F72B /* Configuration-beta.xcconfig */;
 			buildSettings = {
@@ -493,7 +493,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -502,9 +502,9 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
-			name = "Debug (beta)";
+			name = "Debug-beta";
 		};
-		E06340B2273046B10054F72B /* Debug (beta) */ = {
+		E06340B2273046B10054F72B /* Debug-beta */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E06340BD2730490F0054F72B /* Configuration-beta.xcconfig */;
 			buildSettings = {
@@ -532,9 +532,9 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = "Debug (beta)";
+			name = "Debug-beta";
 		};
-		E06340B5273047510054F72B /* Debug (real) */ = {
+		E06340B5273047510054F72B /* Debug-real */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E06340BE273049140054F72B /* Configuration-real.xcconfig */;
 			buildSettings = {
@@ -587,7 +587,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -596,9 +596,9 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
-			name = "Debug (real)";
+			name = "Debug-real";
 		};
-		E06340B6273047510054F72B /* Debug (real) */ = {
+		E06340B6273047510054F72B /* Debug-real */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E06340BE273049140054F72B /* Configuration-real.xcconfig */;
 			buildSettings = {
@@ -626,9 +626,9 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = "Debug (real)";
+			name = "Debug-real";
 		};
-		E06340B7273047720054F72B /* Release (beta) */ = {
+		E06340B7273047720054F72B /* Release-beta */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E06340BD2730490F0054F72B /* Configuration-beta.xcconfig */;
 			buildSettings = {
@@ -675,7 +675,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "$(X_BUNDLE_ID)";
@@ -684,9 +684,9 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
-			name = "Release (beta)";
+			name = "Release-beta";
 		};
-		E06340B8273047720054F72B /* Release (beta) */ = {
+		E06340B8273047720054F72B /* Release-beta */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E06340BD2730490F0054F72B /* Configuration-beta.xcconfig */;
 			buildSettings = {
@@ -714,9 +714,9 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = "Release (beta)";
+			name = "Release-beta";
 		};
-		E06340B9273047740054F72B /* Release (real) */ = {
+		E06340B9273047740054F72B /* Release-real */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E06340BE273049140054F72B /* Configuration-real.xcconfig */;
 			buildSettings = {
@@ -763,7 +763,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "$(X_BUNDLE_ID)";
@@ -772,9 +772,9 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
-			name = "Release (real)";
+			name = "Release-real";
 		};
-		E06340BA273047740054F72B /* Release (real) */ = {
+		E06340BA273047740054F72B /* Release-real */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E06340BE273049140054F72B /* Configuration-real.xcconfig */;
 			buildSettings = {
@@ -802,7 +802,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = "Release (real)";
+			name = "Release-real";
 		};
 /* End XCBuildConfiguration section */
 
@@ -810,28 +810,28 @@
 		E0634095273045C20054F72B /* Build configuration list for PBXProject "SavePhoto" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E06340AC273045C50054F72B /* Debug (alpha) */,
-				E06340B1273046B10054F72B /* Debug (beta) */,
-				E06340B5273047510054F72B /* Debug (real) */,
-				E06340AD273045C50054F72B /* Release (alpha) */,
-				E06340B7273047720054F72B /* Release (beta) */,
-				E06340B9273047740054F72B /* Release (real) */,
+				E06340AC273045C50054F72B /* Debug-alpha */,
+				E06340B1273046B10054F72B /* Debug-beta */,
+				E06340B5273047510054F72B /* Debug-real */,
+				E06340AD273045C50054F72B /* Release-alpha */,
+				E06340B7273047720054F72B /* Release-beta */,
+				E06340B9273047740054F72B /* Release-real */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "Release (alpha)";
+			defaultConfigurationName = "Release-alpha";
 		};
 		E06340AE273045C50054F72B /* Build configuration list for PBXNativeTarget "SavePhoto" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E06340AF273045C50054F72B /* Debug (alpha) */,
-				E06340B2273046B10054F72B /* Debug (beta) */,
-				E06340B6273047510054F72B /* Debug (real) */,
-				E06340B0273045C50054F72B /* Release (alpha) */,
-				E06340B8273047720054F72B /* Release (beta) */,
-				E06340BA273047740054F72B /* Release (real) */,
+				E06340AF273045C50054F72B /* Debug-alpha */,
+				E06340B2273046B10054F72B /* Debug-beta */,
+				E06340B6273047510054F72B /* Debug-real */,
+				E06340B0273045C50054F72B /* Release-alpha */,
+				E06340B8273047720054F72B /* Release-beta */,
+				E06340BA273047740054F72B /* Release-real */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "Release (alpha)";
+			defaultConfigurationName = "Release-alpha";
 		};
 /* End XCConfigurationList section */
 
