@@ -220,7 +220,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "echo \"Build Configuration: \" ${CONFIGURATION}\n\nif [ ${CONFIGURATION} == *\"real\" ]; then\n    echo \"GoogleService-real\"\n    cp -r \"${PROJECT_DIR}/${PRODUCT_NAME}/Service/GoogleService-Info-real.plist\"\n     \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\nelif [ ${CONFIGURATION} == *\"alpha\" ]; then  \n    echo \"alpha\"\n    cp -r \"${PROJECT_DIR}/${PRODUCT_NAME}/Service/GoogleService-Info-alpha.plist\"\n     \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\nelse \n    echo \"beta\"\n    cp -r \"${PROJECT_DIR}/${PRODUCT_NAME}/Service/GoogleService-Info-beta.plist\" \n    \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\nfi\n";
+			shellScript = "echo \"Build Configuration: \" ${CONFIGURATION}\n\nif [ ${CONFIGURATION} == *\"real\" ]; then\n    echo \"GoogleService-real\"\n    cp -r \"${PROJECT_DIR}/${PRODUCT_NAME}/Service/GoogleService-Info.plist\"\n     \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\nelif [ ${CONFIGURATION} == *\"alpha\" ]; then  \n    echo \"alpha\"\n    cp -r \"${PROJECT_DIR}/${PRODUCT_NAME}/Service/GoogleService-Info-alpha.plist\"\n     \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\nelse \n    echo \"beta\"\n    cp -r \"${PROJECT_DIR}/${PRODUCT_NAME}/Service/GoogleService-Info-beta.plist\" \n    \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
