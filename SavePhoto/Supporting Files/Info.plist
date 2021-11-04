@@ -4,8 +4,6 @@
 <dict>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
-	<key>CFBundleShortVersionString</key>
-	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleDisplayName</key>
 	<string>$(X_BUNDLE_DISPLAY_NAME)</string>
 	<key>CFBundleIdentifier</key>
