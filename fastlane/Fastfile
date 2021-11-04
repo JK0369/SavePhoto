@@ -1,11 +1,13 @@
 default_platform(:ios)
 
 ENV["FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD"] = "wzwy-zcxl-xkev-lyft"
-ENV["FASTLANE_PASSWORD"] = "myPw*()"
-ENV["MATCH_PASSWORD"] = "myPw*()"
 
 platform :ios do
   
+  before_all do 
+    ENV["MATCH_PASSWORD"] = "myPw*()"
+  end
+
   # deploy
 
   lane :deploy_alpha do |options|
