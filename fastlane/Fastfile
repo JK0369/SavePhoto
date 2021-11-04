@@ -1,6 +1,7 @@
 default_platform(:ios)
 
 ENV["FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD"] = "wzwy-zcxl-xkev-lyft"
+ENV["MATCH_PASSWORD"] = "myPw*()"
 
 platform :ios do
   
