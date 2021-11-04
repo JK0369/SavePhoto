@@ -7,7 +7,6 @@ platform :ios do
   # deploy
 
   lane :deploy_alpha do |options|
-    renew_codesign_alpha()
     sync_codesign_alpha()
     bump_build_number()
     build(configuration: "alpha")
@@ -15,7 +14,6 @@ platform :ios do
   end
 
   lane :deploy_beta do |options|
-    renew_codesign_beta()
     sync_codesign_beta()
     bump_build_number()
     build(configuration: "beta")
@@ -23,8 +21,6 @@ platform :ios do
   end
 
   lane :deploy_real do |options|
-
-    renew_codesign_real()
     sync_codesign_real()
     bump_build_number()
     build(configuration: "real")
