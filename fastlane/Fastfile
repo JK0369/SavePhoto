@@ -8,18 +8,21 @@ platform :ios do
 
   lane :deploy_alpha do |options|
     sync_codesign_alpha()
+    bump_build_number()
     build(configuration: "alpha")
     upload_to_firebase(appid: "1:773589851865:ios:d1dcae5400c3304acce8c8", tester_group: "tester-first, tester-second" )
   end
 
   lane :deploy_beta do |options|
     sync_codesign_beta()
+    bump_build_number()
     build(configuration: "beta")
     upload_to_firebase(appid: "1:773589851865:ios:749c1a7bffb649b1cce8c8", tester_group: "tester-first, tester-second" )
   end
 
   lane :deploy_real do |options|
     sync_codesign_real()
+    bump_build_number()
     build(configuration: "real")
 
     api_key = app_store_connect_api_key(
@@ -31,7 +34,6 @@ platform :ios do
     )
 
     upload_to_testflight(
-      username: "palatable7",
       api_key: api_key,
       skip_waiting_for_build_processing: true, 
       ipa: "fastlane/distribute/SavePhoto.ipa"
@@ -121,6 +123,14 @@ platform :ios do
       ipa_path: "./fastlane/distribute/SavePhoto.ipa"
       #release_notes: "Lots of amazing new features to test out!"
     )
+  end
+
+  private_lane :bump_build_number do
+    ensure_git_status_clean
+    increment_build_number(xcodeproj: "./SavePhoto.xcodeproj")
+    build_number = get_build_number(xcodeproj: "./SavePhoto.xcodeproj")
+    commit_version_bump(message: "Bump build number to #{build_number} by fastlane", xcodeproj: "./SavePhoto.xcodeproj")
+    push_to_git_remote
   end
 
 end
