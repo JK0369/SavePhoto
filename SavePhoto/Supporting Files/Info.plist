@@ -5,7 +5,7 @@
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
 	<key>CFBundleVersion</key>
-	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<string>23</string>
 	<key>CFBundleDisplayName</key>
 	<string>$(X_BUNDLE_DISPLAY_NAME)</string>
 	<key>CFBundleIdentifier</key>
